@@ -1,0 +1,645 @@
+@charset "utf-8";
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+header{
+    position: fixed;
+    width: 97%;
+    padding: 20px 20px;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    background-color: #666262;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 0px 5%;
+  }
+header nav ul{
+    display: flex;
+  }
+header nav ul li a{
+    margin: 10px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+  }
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background: url(Images/ggwp.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.model{
+    height: 170px;
+    position: absolute;
+    bottom: 50%;
+    left: 48%;
+    transform: translateX(-30%);
+}
+.logo{
+    color: #ffffff;
+    font-size: 30px;
+}  
+.active{
+    color: #52dbf3;
+    
+}
+.skills-btn{
+    position: absolute;
+    bottom:30%;
+    left: 40%;
+    height: 60px;
+    width: 130px;
+    color: #FFFFFF;
+    font-size: 32px;
+    background-color: #00000f;
+    border:2px solid #afacac; 
+}
+.down-btn{
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    height: 60px;
+    width: 130px;
+    font-size: 24px;
+    align-items: center;
+    border:2px solid #373636;
+    color: #373636; 
+}
+button:active{
+    transform: scale(1.1);
+}
+.banner h2{
+    position: absolute;
+    left: 42.5%;
+    bottom: 36.5%;
+    align-items: center;
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 500;
+    
+}
+.banner h2 span{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.banner p{
+    position: absolute;
+    left: 42%;
+    bottom: 37%;
+    font-size: 18px;
+    color: #948f8f;
+    font-weight: 500;
+    line-height: 1; 
+}
+.fa {
+    padding: 20px;
+    font-size: 35px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 70%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+  /* Facebook */
+.fa-facebook {
+    position: absolute;
+    bottom: 28%;
+    left: 38.5%;
+    background: #948f8f;
+    color: white;
+}
+  /* github */
+.fa-github {
+    position: absolute;
+    bottom: 28%;
+    left: 44.5%;
+    background: #948f8f;
+    color: white;
+}
+.fa-instagram {
+    position: absolute;
+    bottom: 28%;
+    left: 50.5%;
+    background: #948f8f;
+    color: white;
+}
+.fa-skype {
+    position: absolute;
+    bottom: 28%;
+    left: 56.5%;
+    background: #948f8f;
+    color: white;
+}
+.About {
+    position: relative;
+    min-height: 100vh;
+    background: #f1f7f7ea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.model1{
+    height: 500px;
+    position: absolute;
+    left: 12%;
+    transform: translateX(-30%);
+}
+.About h2{
+    position: absolute;
+    left: 40%;
+    bottom: 60%;
+    align-items: center;
+    font-size: 35px;
+    color: #000000;
+    font-weight: 500;
+    
+}
+.About h2 span{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.About h3{
+    position: absolute;
+    left: 40%;
+    bottom: 43%;
+    align-items: center;
+    font-size: 22px;
+    color: #000000;
+    font-weight: 500;  
+}
+.skills {
+    position: relative;
+    min-height: 100vh;
+    background-color: #00000F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    z-index:-10;
+}
+.skills h2{
+    position: absolute;
+    bottom:70%;
+    left: 43%;
+    font-size: 48px;
+    font-weight: 500px;
+    color: #fffff1;
+}
+.skills h3{
+    position: absolute;
+    bottom: 33%;
+    left: 15%;
+    font-size: 24px;
+    font-weight: 550px;
+    color: #3c3f3f;
+}
+.skills h4{
+    position: absolute;
+    bottom: 26.2%;
+    left: 16%;
+    font-size: 20px;
+    font-weight: 500px;
+    color: #3c3f3f;
+}
+.skillsContent .arduino{
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    color: #c4bdbd;
+    font-size: 20px;
+    
+}
+.skillsContent .arduino .lower{
+    width: 100%;
+    top: 100%;
+    height: 15px;
+    position: absolute;
+    background-color: #fffff1;
+    border-radius: 50px;
+}
+.skillsContent .arduino .lower .percentage{
+    position: absolute;
+    bottom: 00%;
+    width: var(--width);
+    background-color: #52dbf3;
+    height: 15px;
+    margin-top: 10px;
+    border-radius: 50px;
+    animation-name: skillsanimation;
+    animation-duration: 4s;
+}
+
+.skillsContent .cs{
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    color: #c4bdbd;
+    font-size: 20px;
+    
+}
+.skillsContent .cs .lower{
+    width: 100%;
+    top: 100%;
+    height: 15px;
+    position: absolute;
+    background-color: #fffff1;
+    border-radius: 50px;
+}
+.skillsContent .cs .lower .percentage{
+    position: absolute;
+    bottom: 00%;
+    width: var(--width);
+    background-color: #52dbf3;
+    height: 15px;
+    margin-top: 10px;
+    border-radius: 50px;
+    animation-name: skillsanimation;
+    animation-duration: 4s;
+}
+.skillsContent .python{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    color: #c4bdbd;
+    font-size: 20px;
+    
+}
+.skillsContent .python .lower{
+    width: 100%;
+    top: 100%;
+    height: 15px;
+    position: absolute;
+    background-color: #fffff1;
+    border-radius: 50px;
+}
+.skillsContent .python .lower .percentage{
+    position: absolute;
+    bottom: 00%;
+    width: var(--width);
+    background-color: #52dbf3;
+    height: 15px;
+    margin-top: 10px;
+    border-radius: 50px;
+    animation-name: skillsanimation;
+    animation-duration: 4s;
+}
+.skillsContent .cp{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    color: #c4bdbd;
+    font-size: 20px;
+    
+}
+.skillsContent .cp .lower{
+    width: 100%;
+    top: 100%;
+    height: 15px;
+    position: absolute;
+    background-color: #fffff1;
+    border-radius: 50px;
+}
+.skillsContent .cp .lower .percentage{
+    position: absolute;
+    bottom: 00%;
+    width: var(--width);
+    background-color: #52dbf3;
+    height: 15px;
+    margin-top: 10px;
+    border-radius: 50px;
+    animation-name: skillsanimation;
+    animation-duration: 4s;
+}
+.skillsContent .java{
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    color: #c4bdbd;
+    font-size: 20px;
+    
+}
+.skillsContent .java .lower{
+    width: 100%;
+    top: 100%;
+    height: 15px;
+    position: absolute;
+    background-color: #fffff1;
+    border-radius: 50px;
+}
+.skillsContent .java .lower .percentage{
+    position: absolute;
+    bottom: 00%;
+    width: var(--width);
+    background-color: #52dbf3;
+    height: 15px;
+    margin-top: 10px;
+    border-radius: 50px;
+    animation-name: skillsanimation;
+    animation-duration: 4s;
+}
+.skillsContent .html{
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    color: #c4bdbd;
+    font-size: 20px;
+    
+}
+.skillsContent .html .lower{
+    width: 100%;
+    top: 100%;
+    height: 15px;
+    position: absolute;
+    background-color: #fffff1;
+    border-radius: 50px;
+}
+.skillsContent .html .lower .percentage{
+    position: absolute;
+    bottom: 00%;
+    width: var(--width);
+    background-color: #52dbf3;
+    height: 15px;
+    margin-top: 10px;
+    border-radius: 50px;
+    animation-name: skillsanimation;
+    animation-duration: 4s;
+}
+@keyframes skillsanimation {
+    0%   {background-color:#52dbf3; width: 0;}
+    100% {background-color:#52dbf3; width: var(--width);}
+}
+.square{
+    position: absolute;
+    top: 38%;
+    left: 10%;
+    height: 340px;
+    width: 500px;
+    background-color: #fffff1;
+    z-index:-5;
+    border-radius: 50px;
+}
+.contact {
+    position: relative;
+    min-height: 100vh;
+    background-color: #00000f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+
+}
+
+.contact h1{
+    position: absolute;
+    font-size: 42px;
+    font-weight: 550;
+    top: 10%;
+    left: 41%;
+    color: white;
+}
+.contact p1{
+    position: absolute;
+    top: 24%;
+    left: 35%;
+    font-size: large;
+    color: white;
+}
+.contact p2{
+    position: absolute;
+    top: 35%;
+    left: 7%;
+    font-size: 19px;
+    font-weight: 550;
+    color: white;
+}
+.contact p3{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    font-size: 19px;
+    font-weight: 550;
+    color: white;
+}
+.contact p4{
+    position: absolute;
+    top: 43%;
+    left: 13.5%;
+    font-size: large;
+    font-weight: 550;
+    color: #52dbf3;
+}
+.contact p5{
+    position: absolute;
+    top: 46.5%;
+    left: 13.5%;
+    font-size: large;
+    color: white;
+}
+.contact p6{
+    position: absolute;
+    top: 63%;
+    left: 13.5%;
+    font-size: large;
+    color: white;
+}
+
+.fa-map-marker {
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    color: white;
+    font-size:30px;
+}
+.fa-phone {
+    position: absolute;
+    top: 56.8%;
+    left: 7%;
+    color: white;
+    font-size:30px;
+}
+.fa-envelope-o {
+    position: absolute;
+    top: 69.8%;
+    left: 7%;
+    color: white;
+    font-size:cx;
+}
+
+.formBx
+{
+  position: absolute;
+  top: 38%;
+  left: 39%;
+  float: left;
+  width: 50%;
+  padding: 20px;
+
+}
+.formBx form
+{
+    display: flex;
+    flex-direction: column;
+}
+.formBx form input,
+.formBx form textarea
+{
+    
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #FFFFFF;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 450px;
+}
+.formBx form textarea
+{
+    min-height: 150px;
+}
+.formBx form input::placeholder,
+.formBx form textarea::placeholder
+{
+    color: #444343;
+}
+.formBx form input[type="submit"]
+{
+    max-width: 120px;
+    background: #52dbf3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.project {
+    position: relative;
+    min-height: 100vh;
+    background-color: #f1f7f7ea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.project h2{
+    position: absolute;
+    font-size: 42px;
+    font-weight: 550;
+    top: 10%;
+    left: 43%;
+}
+.project p1{
+    position: absolute;
+    top: 32%;
+    left: 3%;
+}
+.slideshow-container1{
+    max-width: 450px;
+    margin: auto;
+    position: absolute;
+    top: 35%;
+    left: 3%;
+}
+.project p2{
+    position: absolute;
+    top: 32%;
+    left: 35%;
+}
+.slideshow-container2{
+    max-width: 450px;
+    margin: auto;
+    position: absolute;
+    top: 25.5%;
+    left: 35%;
+}
+.project p3{
+    position: absolute;
+    top: 32%;
+    left: 67%;
+}
+.slideshow-container3{
+    max-width: 450px;
+    margin: auto;
+    position: absolute;
+    top: 35%;
+    left: 67%;
+}
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  /* On hover, add a grey background color */
+.prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
