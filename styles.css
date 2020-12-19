@@ -247,7 +247,7 @@ button:active{
 .skillsContent .arduino .lower .percentage{
     position: absolute;
     bottom: 00%;
-    width: var(--width);
+    width: (--width);
     background-color: #52dbf3;
     height: 15px;
     margin-top: 10px;
@@ -545,13 +545,14 @@ button:active{
 {
     color: #444343;
 }
-.formBx form input[type="submit"]
-{
-    max-width: 120px;
-    background: #52dbf3;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.submit-btn{
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    color: #FFFFFF;
+    font-size: 22px;
+    background-color: #52dbf3;
+    border:2px solid #afacac; 
 }
 .project {
     position: relative;
